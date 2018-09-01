@@ -15,7 +15,7 @@
 <meta property="og:description" content="mongodb1.数据库简介1.1数据库（Database）​    1) 数据库是按照数据结构来组织、存储和管理数据的仓库。​    2)我们的程序都是在内存中运行的，一旦程序运行结束或者计算机断电，程序运行中的数据都会丢失。​    3) 所以我们就需要将一些程序运行的数据持久化到硬盘之中，以确保数据的安全性。而数据库就是数据持久化的最佳选择。​    4)说白了，数据库就是存储数据的仓库。">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="c:/Users/majianquan/Desktop/node/img/mongodb.png">
-<meta property="og:updated_time" content="2018-06-21T05:35:40.000Z">
+<meta property="og:updated_time" content="2018-09-01T12:45:28.442Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
 <meta name="twitter:description" content="mongodb1.数据库简介1.1数据库（Database）​    1) 数据库是按照数据结构来组织、存储和管理数据的仓库。​    2)我们的程序都是在内存中运行的，一旦程序运行结束或者计算机断电，程序运行中的数据都会丢失。​    3) 所以我们就需要将一些程序运行的数据持久化到硬盘之中，以确保数据的安全性。而数据库就是数据持久化的最佳选择。​    4)说白了，数据库就是存储数据的仓库。">
@@ -110,7 +110,7 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sc.exe create MongoDB binPath= "\"mongo bin路径\mongod.exe\" --service --</span><br><span class="line">config=\"mongo路径\mongod.cfg\"" DisplayName= "MongoDB" start= "auto"</span><br></pre></td></tr></table></figure>
 <p>​    3)删除服务</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sc delete MongoDB</span><br></pre></td></tr></table></figure>
-<h4 id="5-4关闭MongoDB"><a href="#5-4关闭MongoDB" class="headerlink" title="5.4关闭MongoDB"></a>5.4关闭MongoDB</h4><p>​    • 打开新的命令行窗口<br>​    • 登录服务器<br>​        – mongo<br>​    • 切换管理员用户<br>​        – use admin<br>​    • 关闭数据库<br>​        – db.shutdownServer()</p>
+<h4 id="5-4关闭MongoDB"><a href="#5-4关闭MongoDB" class="headerlink" title="5.4关闭MongoDB"></a>5.4关闭MongoDB</h4><p>​    • 打开新的命令行窗口<br>​    • 登录服务器<br>​        – mongo<br>​    • 切换管理员用户<br>​        – use admin<br>​    • 关闭数据库<br>​        – db.shutdownServer()<br><a id="more"></a></p>
 <h3 id="6-MongoDB的使用"><a href="#6-MongoDB的使用" class="headerlink" title="6.MongoDB的使用"></a>6.MongoDB的使用</h3><h4 id="1-mongo-shell"><a href="#1-mongo-shell" class="headerlink" title="1) mongo shell"></a>1) mongo shell</h4><p>• 登录mongo shell<br>– mongo<br>• 命令<br>– help <option> 语法帮助<br>– use <database> 更改当前操作的数据库<br>– show <option> 根据参数显示列表<br>• dbs 显示数据库列表<br>• collections 显示当前数据库的集合<br>• profile 显示时间超过1毫秒的system.profile条目<br>• log[name] 显示登录记忆的最后一段<br>– exit 退出数据库<br>– load(script) 加载js文件db.auth(username , password)在当前数据库做身份验证</option></database></option></p>
 <h4 id="2-数据库-集合-文档"><a href="#2-数据库-集合-文档" class="headerlink" title="2)数据库/集合/文档"></a>2)数据库/集合/文档</h4><p>1)数据库（database）</p>
 <pre><code>– 数据库是一个仓库，在仓库中可以存放集合。
@@ -178,7 +178,7 @@ WriteResult({ &quot;nInserted&quot; : 1 })
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/01/mongodb/" data-id="cjljeywum0001ngr61poew7ud" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/01/mongodb/" data-id="cjljfa8ru00005or63w9k196j" class="article-share-link">Share</a>
       
       
     </footer>
